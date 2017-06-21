@@ -9,3 +9,7 @@ RUN sudo wget https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKsc-hin
   sudo mv *.otf /usr/share/fonts && \
   sudo chmod 644 /usr/share/fonts/*.otf && \
   sudo fc-cache
+
+# install gitbook
+RUN sudo npm install -g gitbook-cli && \
+  gitbook install manual
